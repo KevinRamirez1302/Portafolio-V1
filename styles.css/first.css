@@ -1,0 +1,209 @@
+#first__container{
+    display: block;
+    justify-content: space-around;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.first__tittle{
+    font-size: 2rem;
+    color: #173755;
+    padding: 6rem 0 0 0rem; 
+    margin-left: 1rem;
+}
+
+.first__description{
+    padding: 1rem 0px 1rem 0;
+    font-weight: bold;
+    font-size: 0.6rem;
+    width: 89vw;
+    line-height: 2;
+    text-align: justify;
+    color: #173755;
+    margin-left: 1rem;
+}
+.venezuela{
+    width: 3vw;
+    transition: all 500ms ease-in-out;
+}
+
+.venezuela:hover{
+    transform: scale(1.2);
+}
+
+.work-all-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.work-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.work-logo{
+    width: 10vw;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+
+.mi-foto{
+    width: 15vw;
+    margin: auto;
+}
+
+.correo{
+    margin: auto;
+    font-size: .8rem;
+}
+@media screen and (min-width:700px){
+
+    #first__container{
+        display: flex;
+        justify-content: space-around;
+        height: 90vh;
+    }
+
+    .first__tittle{
+        font-size: 2rem;
+        color: #173755;
+        padding: 0;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+
+    .first__description{
+        padding: 1rem 0px 1rem 0;
+        font-weight: bold;
+        width:50vw;
+        font-size: .7rem;
+        margin-left: 1rem;
+    }
+
+    .work-all-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    
+    .work-logo{
+        width: 6vw;
+        margin:  1rem;
+        cursor: pointer;
+        
+        
+    }
+
+    .mi-foto{
+        align-self: center;
+        width: 15vw;
+        margin-top: 12rem;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+
+    #first__container{
+        display: flex;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .first__tittle{
+        font-size: 2.5rem;
+        color: #173755;
+        padding: 7rem 0 0;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    
+    }
+
+    .first__description{
+        padding: 1rem 0px 1rem 0;
+        font-weight: bold;
+        width: 40vw;
+        font-size: .8rem;
+        margin-left: 2rem;
+    }
+
+    .work-all-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    
+    .work-logo{
+        width: 7vw;
+        margin: 2rem;
+        cursor: pointer;
+    }
+
+    .mi-foto{
+        align-self: center;
+        width: 15vw;
+        margin-top: 8rem;
+    }
+    
+    
+}
+
+.maquina__escribir {
+    
+    padding: .7rem;
+    background: #173755;
+    color: white;
+    position: relative;
+    
+}
+
+.maquina__escribir::after{
+    background-color: white;
+    content: "";
+    border-left: 2px solid black;
+    top: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: maquinaescribir 3s infinite alternate steps(17);
+}
+
+
+
+.maquina__escribir {
+    padding: 0.7rem;
+    background: #173755;
+    color: white;
+    position: relative;
+    
+}
+
+.maquina__escribir::after{
+    background-color: white;
+    content: "";
+    border-left: 2px solid black;
+    top: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: maquinaescribir 3s infinite alternate steps(17);
+}
+
+
+
+
+
+@keyframes maquinaescribir{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}

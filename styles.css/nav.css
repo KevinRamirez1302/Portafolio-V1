@@ -1,0 +1,182 @@
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    background-color: #173755;
+    position:fixed;
+    box-shadow:0 18px 36px rgba(0, 0, 0, 0.30), 0 14px 11px rgba(0, 0, 0, 0.22) ;
+    z-index: 1;
+}
+.item__vinculo{
+    transition: all 3s;
+    opacity: 0.5;
+    transition: all 500ms;
+}
+
+.item__vinculo:hover{
+    opacity: 1;
+    
+}
+
+.items__container{
+    display: none;
+    overflow: hidden;
+}
+
+.nav__item{
+    list-style: none;
+}
+
+
+
+.nav__logo{
+    width: 8vw;
+    height: 6vh;
+    align-self: center;
+    margin-left: 1.5rem;
+}
+
+.nav__logo-text{
+    font-weight: bold;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/* MENU HAMBURGUESA */
+
+.menuHam{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    
+}
+
+.menuHam span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #00ABB3;
+    margin-top: 6px;
+    transition: all 300ms;
+    transform-origin: 0px 100%;
+
+}
+
+.activeLinea1{
+    transform: rotate(45deg) translate(-2px, 3px);
+}
+.activeLinea2{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeLinea3{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+/* SIDE BAR MENU */
+
+.containerMenu {
+    display: flex;
+    position: fixed;
+    top: 7vh;
+    left: -250px;
+    background-color:#173755 ;
+    width: 250px;
+    height: 100vh;
+    transition: all 300ms ease;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+   }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerSide {
+    left: 0px;
+    transition: all 300ms ease;
+}
+
+.containerMenu nav li a{
+    text-decoration: none;
+    color:#B2B2B2 ;
+}
+
+.containerMenu nav li{
+    list-style: none;
+    margin: 10px;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width:1024px){
+    .menuHam{
+        display: none;
+    }
+
+    .items__container{
+        display: flex;
+        
+        
+    }
+
+    .item__vinculo{
+        text-decoration: none;
+        color: white;
+        margin-right: 2rem;
+    }
+    .item__vinculo:hover{
+        opacity: 0;
+
+    }
+
+    .nav__logo{
+        width:5vw;
+        height: 5vh;
+        align-self: center;
+        margin-left: 1.5rem;
+    }
+  
+}
+
+@media screen and (min-width:700px){
+    .menuHam{
+        display: none;
+    }
+
+    .items__container{
+        display: flex;
+        
+        
+    }
+
+    .item__vinculo{
+        text-decoration: none;
+        color: white;
+        margin-right: 2rem;
+    }
+
+    .nav__logo{
+        width:5vw;
+        height: 6vh;
+        align-self: center;
+        margin-left: 1.5rem;
+    }
+
+    .item__vinculo:hover{
+        opacity: 0.7;
+
+    }
+  
+}

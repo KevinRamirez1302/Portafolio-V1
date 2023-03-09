@@ -1,0 +1,31 @@
+.hobbies__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 1rem 3rem 1rem;
+}
+
+.hobbie__description{
+    text-align: center;
+    font-weight: bold;
+    color: #173755;
+    margin-top: 2rem;
+}
+
+.hobbie{
+    margin: 2rem;
+}
+
+@media screen and (min-width:1024px){
+    .hobbies__img{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+
+    .hobbie{
+        margin: 3rem;
+    }
+    
+}
