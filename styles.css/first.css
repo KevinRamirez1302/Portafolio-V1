@@ -59,6 +59,10 @@
 .correo{
     margin: auto;
     font-size: .8rem;
+    margin-top: 15px;
+    background-color: #173755;
+    color: white;
+    padding: 3px 8px;
 }
 @media screen and (min-width:700px){
 
