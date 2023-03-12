@@ -108,6 +108,26 @@
         width: 15vw;
         margin-top: 12rem;
     }
+
+    .maquina__escribir {
+    
+        padding: .7rem;
+        background: #173755;
+        color: white;
+        position: relative;
+        
+    }
+    
+    .maquina__escribir::after{
+        background-color: white;
+        content: "";
+        border-left: 2px solid black;
+        top: 0;
+        right: 0;
+        height: 100%;
+        position: absolute;
+        animation: maquinaescribir 3s infinite alternate steps(17);
+    }
     
 }
 
@@ -154,53 +174,29 @@
         width: 15vw;
         margin-top: 8rem;
     }
+
+    .maquina__escribir {
+    
+        padding: .7rem;
+        background: #173755;
+        color: white;
+        position: relative;
+        
+    }
+    
+    .maquina__escribir::after{
+        background-color: white;
+        content: "";
+        border-left: 2px solid black;
+        top: 0;
+        right: 0;
+        height: 100%;
+        position: absolute;
+        animation: maquinaescribir 3s infinite alternate steps(17);
+    }
     
     
 }
-
-.maquina__escribir {
-    
-    padding: .7rem;
-    background: #173755;
-    color: white;
-    position: relative;
-    
-}
-
-.maquina__escribir::after{
-    background-color: white;
-    content: "";
-    border-left: 2px solid black;
-    top: 0;
-    right: 0;
-    height: 100%;
-    position: absolute;
-    animation: maquinaescribir 3s infinite alternate steps(17);
-}
-
-
-
-.maquina__escribir {
-    padding: 0.7rem;
-    background: #173755;
-    color: white;
-    position: relative;
-    
-}
-
-.maquina__escribir::after{
-    background-color: white;
-    content: "";
-    border-left: 2px solid black;
-    top: 0;
-    right: 0;
-    height: 100%;
-    position: absolute;
-    animation: maquinaescribir 3s infinite alternate steps(17);
-}
-
-
-
 
 
 @keyframes maquinaescribir{
