@@ -2,14 +2,14 @@
     display: block;
     justify-content: space-around;
     height: 100vh;
-    position: relative;
     box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 .first__tittle{
     font-size: 1.8rem;
     color: #173755;
-    padding: 6rem 0 0 0rem; 
+    padding: 4.5rem 0 0 0rem; 
     margin-left: 1rem;
 }
 
@@ -47,7 +47,7 @@
 
 .work-logo{
     width: 10vw;
-    margin: 1rem 1rem;
+    margin: 0 1rem;
     cursor: pointer;
 }
 
